@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <limits>
 using namespace std;
 
 int main()
@@ -12,25 +11,31 @@ int main()
 	double num, total = 0, smallest, largest;
 	int count = 0;
 
-	smallest = numeric_limits<double>::max();	// set smallest to the largest possible double
-	largest = -numeric_limits<double>::max();	// set largest to the smallest possible double
-
 	// welcome
 	cout << "Data Statistics" << endl;
 	cout << "Enter Values (NAN to stop): ";
 
 	while (cin >> num)
 	{
-		count++;								// increment number of values
-		total += num;							// update total
+		count++;						// increment number of values
+		total += num;					// update total
 
-		if (count < 1 || num < smallest)		// first value or smallest
+		if (count == 1)					// first value is both smallest and largest
 		{
 			smallest = num;
-		}
-		else if (count < 1 || num > largest)	// first value or largest
-		{
 			largest = num;
+		}
+		
+		if (count > 1)
+		{
+			if (num < smallest)			// num is new smallest
+			{
+				smallest = num;
+			}
+			else if (num > largest)		// num is new largest
+			{
+				largest = num;
+			}
 		}
 
 		cout << "Enter Values (NAN to stop): ";
