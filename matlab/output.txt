@@ -1,0 +1,10 @@
+1.0000 degrees is 0.0175 in radian
+2.0000 degrees is 0.0349 in radian
+3.0000 degrees is 0.0524 in radian
+4.0000 degrees is 0.0698 in radian
+5.0000 degrees is 0.0873 in radian
+6.0000 degrees is 0.1047 in radian
+7.0000 degrees is 0.1222 in radian
+8.0000 degrees is 0.1396 in radian
+9.0000 degrees is 0.1571 in radian
+10.0000 degrees is 0.1745 in radian
